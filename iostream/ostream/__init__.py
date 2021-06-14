@@ -1,1 +1,1 @@
-from .output import ostream
+from .osm import ostream

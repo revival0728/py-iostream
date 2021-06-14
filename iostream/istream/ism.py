@@ -31,18 +31,18 @@ class istream:
         buf = self.__buffer
         buf.strip()
         if not ' ' in buf:
-            self.__buffer = self.__buffer.replace(buf, '')
+            self.__buffer = self.__buffer.replace(buf, '', 1)
             return to_type(buf.strip())
         else:
             buf = buf.split()
-            self.__buffer = self.__buffer.replace(buf[0], '')
+            self.__buffer = self.__buffer.replace(buf[0], '', 1)
             return to_type(buf[0].strip())
 
     def readlist(self, to_type=str) -> list:
         self.__read_buffer()
         self.__buffer_strip_front()
         buf = self.__buffer.split('\n')[0]
-        self.__buffer = self.__buffer.replace(buf, '')
+        self.__buffer = self.__buffer.replace(buf, '', 1)
         if not ' ' in buf.strip():
             return [to_type(buf.strip())]
         else:

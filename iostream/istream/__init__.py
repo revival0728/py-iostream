@@ -1,1 +1,1 @@
-from .input import istream
+from .ism import istream
