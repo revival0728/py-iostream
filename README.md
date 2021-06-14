@@ -1,8 +1,23 @@
 # py-iostream
 A simpler Python iostream
 
+## Download this module
+You can clone this repository from Github or click [HERE](https://downgit.github.io/#/home?url=https://github.com/revival0728/py-iostream/tree/master/iostream) to download
+
+## Import module
+You can use
+```python
+import iostream as ios
+```
+
+But
+```python
+from iostream import *
+```
+is more conveniet
+
 ## How to use it
-I is similar to C++ iostream
+It is similar to C++ iostream
 
 `pin` stands for `sys.stdin`, `pout` stands for `sys.stdout`, perr stands for `sys.stderr`
 
