@@ -47,8 +47,8 @@ class istream:
             return [to_type(buf.strip())]
         else:
             buf = buf.strip().split()
-            for i in buf:
-                i = to_type(i)
+            for i in range(len(buf)):
+                buf[i] = to_type(buf[i])
             return buf
 
     def readtuple(self, to_type=str) -> tuple:
